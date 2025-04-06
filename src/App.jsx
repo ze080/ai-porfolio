@@ -24,31 +24,21 @@ function App() {
     </div>
   </div>
 </section>
-<div className="flex gap-6 mt-10 text-3xl">
-  <a
-    href="https://github.com/zayedbinjad"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-gray-300 hover:text-white hover:scale-125 transition-transform duration-300 ease-in-out"
-  >
+<div className="flex gap-6 mt-10 text-2xl">
+  <a href="https://github.com/ze080" target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-400 transition">
     <FaGithub />
   </a>
-  <a
-    href="https://linkedin.com/in/zayedbinjad"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-gray-300 hover:text-blue-400 hover:scale-125 transition-transform duration-300 ease-in-out"
-  >
+  <a href="https://linkedin.com/in/zayedbinjad" target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-400 transition">
     <FaLinkedin />
   </a>
-  <a
-    href="mailto:your.email@example.com"
-    className="text-gray-300 hover:text-pink-400 hover:scale-125 transition-transform duration-300 ease-in-out"
-  >
+  <a href="zayedbinjad@gmai.come" className="text-white hover:text-purple-400 transition">
     <FaEnvelope />
   </a>
 </div>
- <footer className="mt-10 text-sm text-gray-500">
+
+
+
+      <footer className="mt-10 text-sm text-gray-500">
         © {new Date().getFullYear()} Zayed Binjad. All rights reserved.
       </footer>
     </div>
