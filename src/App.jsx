@@ -13,7 +13,7 @@ function App() {
   className="flex flex-col items-center text-center mb-12"
 >
   <img
-    src="/src/assets/profilepic.jpg" 
+    src="/src/assets/profile.jpg" 
     alt="Zayed Binjad"
     className="w-40 h-40 rounded-full border-4 border-purple-500 shadow-lg mb-4 object-cover"
   />
