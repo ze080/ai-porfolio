@@ -5,7 +5,24 @@ import './App.css';
 function App() {
   return (
     <div className="min-h-screen h-full bg-gradient-to-br from-gray-900 via-purple-900 to-black bg-[length:200%_200%] animate-[gradientShift_10s_ease_infinite] text-white flex flex-col items-center justify-center px-4 py-10">
-      
+      {/* 👤 Profile Section */}
+<motion.section
+  initial={{ opacity: 0, y: -30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1 }}
+  className="flex flex-col items-center text-center mb-12"
+>
+  <img
+    src="/src/assets/profilepic.jpg" 
+    alt="Zayed Binjad"
+    className="w-40 h-40 rounded-full border-4 border-purple-500 shadow-lg mb-4 object-cover"
+  />
+  <h1 className="text-5xl font-bold text-purple-400">Zayed Binjad</h1>
+  <p className="text-xl text-gray-300 mt-2">
+    Aspiring AI Engineer | Passionate about ML, Neural Networks & Innovation 🤖
+  </p>
+</motion.section>
+
       {/* Name */}
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
