@@ -1,12 +1,20 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import profileImg from '/profile.jpg';
+import { toggleTheme } from './theme';
+import { FaMoon, FaSun } from 'react-icons/fa';
 import './App.css';
 
 function App() {
   return (
     <div className="min-h-screen h-full bg-gradient-to-br from-gray-900 via-purple-900 to-black bg-[length:200%_200%] animate-[gradientShift_10s_ease_infinite] text-white flex flex-col items-center justify-center px-4 py-10">
-      
+      <button
+  onClick={toggleTheme}
+  className="fixed top-4 right-4 z-50 p-2 rounded-full bg-gray-800 text-yellow-300 dark:bg-white dark:text-gray-800 shadow-md hover:scale-110 transition-transform duration-300"
+>
+  <FaMoon className="dark:hidden" />
+  <FaSun className="hidden dark:inline" />
+</button>
       {/* 👤 Profile Section */}
       <motion.section
         initial={{ opacity: 0, y: -30 }}
