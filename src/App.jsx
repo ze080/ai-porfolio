@@ -15,10 +15,10 @@ function App() {
         className="flex flex-col items-center text-center mb-12"
       >
         <img
-  src="/src/assets/profile.jpg"
-  alt="Zayed Binjad"
-  className="w-40 h-40 ring-glow border-4 border-purple-500 shadow-xl mb-4 object-cover"
-/>
+        src="/src/assets/profile.jpg"
+        alt="Zayed Binjad"
+        className="w-40 h-40 ring-glow border-4 border-purple-500 shadow-xl mb-4 object-cover"
+        />
         <h1 className="text-5xl font-bold text-purple-400">Zayed Binjad</h1>
         <p className="text-xl text-gray-300 mt-2">
           Aspiring AI Engineer | Passionate about ML, Neural Networks & Innovation 🤖
