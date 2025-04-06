@@ -14,7 +14,22 @@
     background-position: 0% 50%;
   }
 }
+@keyframes ringPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(168, 85, 247, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(168, 85, 247, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(168, 85, 247, 0);
+  }
+}
 
+.ring-glow {
+  animation: ringPulse 2s infinite;
+  border-radius: 9999px;
+}
 /* 👑 Custom Utilities (optional if you want to add more coolness later) */
 .shadow-purple-glow {
   box-shadow: 0 0 20px rgba(168, 85, 247, 0.6); /* tailwind purple-500 glow */
