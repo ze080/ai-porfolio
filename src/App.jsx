@@ -6,7 +6,6 @@ function App() {
       <h1 className="text-5xl font-bold text-purple-400 mb-4">Zayed Binjad</h1>
       <p className="text-xl text-gray-300 mb-8">Aspiring AI Engineer | Passionate about ML, Neural Networks & Innovation 🤖</p>
       
-      <section className="w-full max-w-3xl bg-gray-800 rounded-2xl p-6 shadow-lg mt-6">
       <section className="w-full max-w-4xl bg-gray-800 rounded-2xl p-6 shadow-lg mt-6">
   <h2 className="text-3xl font-semibold text-white mb-6">🧠 Featured Projects</h2>
   
@@ -23,9 +22,7 @@ function App() {
     </div>
   </div>
 </section>
-        <h2 className="text-2xl font-semibold text-white mb-4">🧠 Projects Coming Soon...</h2>
-        <p className="text-gray-400">Stay tuned — exciting AI projects are on the way!</p>
-      </section>
+
 
       <footer className="mt-10 text-sm text-gray-500">
         © {new Date().getFullYear()} Zayed Binjad. All rights reserved.
