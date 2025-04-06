@@ -1,49 +1,31 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import profileImg from './assets/profile.jpg';
 import './App.css';
 
 function App() {
   return (
     <div className="min-h-screen h-full bg-gradient-to-br from-gray-900 via-purple-900 to-black bg-[length:200%_200%] animate-[gradientShift_10s_ease_infinite] text-white flex flex-col items-center justify-center px-4 py-10">
+      
       {/* 👤 Profile Section */}
-<motion.section
-  initial={{ opacity: 0, y: -30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 1 }}
-  className="flex flex-col items-center text-center mb-12"
->
-  <img
-    src="/src/assets/profile.jpg" 
-    alt="Zayed Binjad"
-    className="w-40 h-40 rounded-full border-4 border-purple-500 shadow-lg mb-4 object-cover"
-  />
-  <h1 className="text-5xl font-bold text-purple-400">Zayed Binjad</h1>
-  <p className="text-xl text-gray-300 mt-2">
-    Aspiring AI Engineer | Passionate about ML, Neural Networks & Innovation 🤖
-  </p>
-</motion.section>
-
-      {/* Name */}
-      <motion.h1
-        initial={{ opacity: 0, y: -20 }}
+      <motion.section
+        initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-5xl font-bold text-purple-400 mb-4 text-center"
+        className="flex flex-col items-center text-center mb-12"
       >
-        Zayed Binjad
-      </motion.h1>
+        <img
+          src={profileImg}
+          alt="Zayed Binjad"
+          className="w-40 h-40 rounded-full border-4 border-purple-500 shadow-lg mb-4 object-cover"
+        />
+        <h1 className="text-5xl font-bold text-purple-400">Zayed Binjad</h1>
+        <p className="text-xl text-gray-300 mt-2">
+          Aspiring AI Engineer | Passionate about ML, Neural Networks & Innovation 🤖
+        </p>
+      </motion.section>
 
-      {/* Tagline */}
-      <motion.p
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.2 }}
-        className="text-xl text-gray-300 mb-8 text-center"
-      >
-        Aspiring AI Engineer | Passionate about ML, Neural Networks & Innovation 🤖
-      </motion.p>
-
-      {/* Projects Section */}
+      {/* 🧠 Projects Section */}
       <section className="w-full max-w-4xl bg-gray-800 rounded-2xl p-6 shadow-lg mt-6">
         <h2 className="text-3xl font-semibold text-white mb-6">🧠 Featured Projects</h2>
         
@@ -62,7 +44,7 @@ function App() {
         </div>
       </section>
 
-      {/* Social Icons */}
+      {/* 🔗 Social Icons */}
       <div className="flex gap-6 mt-10 text-3xl">
         <a
           href="https://github.com/ze080"
@@ -88,7 +70,7 @@ function App() {
         </a>
       </div>
 
-      {/* Footer */}
+      {/* 📄 Footer */}
       <footer className="mt-10 text-sm text-gray-500">
         © {new Date().getFullYear()} Zayed Binjad. All rights reserved.
       </footer>
