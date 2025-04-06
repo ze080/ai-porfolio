@@ -1,4 +1,5 @@
 import './App.css';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 function App() {
   return (
@@ -26,6 +27,17 @@ function App() {
 
       <footer className="mt-10 text-sm text-gray-500">
         © {new Date().getFullYear()} Zayed Binjad. All rights reserved.
+        <div className="flex gap-6 mt-10 text-2xl">
+  <a href="https://github.com/zayedbinjad" target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-400 transition">
+    <FaGithub />
+  </a>
+  <a href="https://linkedin.com/in/zayedbinjad" target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-400 transition">
+    <FaLinkedin />
+  </a>
+  <a href="mailto:your.email@example.com" className="text-white hover:text-purple-400 transition">
+    <FaEnvelope />
+  </a>
+</div>
       </footer>
     </div>
   );
