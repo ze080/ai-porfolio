@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import profileImg from './assets/profile.jpg';
+import profileImg from '/profile.jpg';
 import './App.css';
 
 function App() {
