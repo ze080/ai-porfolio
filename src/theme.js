@@ -1,8 +1,9 @@
-// src/theme.js
+
+  // src/theme.js
 export function toggleTheme() {
     const html = document.documentElement;
     const isDark = html.classList.contains('dark');
-    
+  
     if (isDark) {
       html.classList.remove('dark');
       localStorage.setItem('theme', 'light');
