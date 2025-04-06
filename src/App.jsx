@@ -15,7 +15,7 @@ function App() {
         className="flex flex-col items-center text-center mb-12"
       >
         <img
-        src="/profile.jpg"
+        src="public/profile.jpg"
         alt="Zayed Binjad"
         className="w-40 h-40 ring-glow border-4 border-purple-500 shadow-xl mb-4 object-cover"
         />
