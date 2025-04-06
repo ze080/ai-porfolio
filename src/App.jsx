@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="min-h-screen h-full bg-gradient-to-br from-gray-900 via-purple-900 to-black bg-[length:200%_200%] animate-[gradientShift_10s_ease_infinite] text-white flex flex-col items-center justify-center px-4 py-10">
-
+      
       {/* Name */}
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
