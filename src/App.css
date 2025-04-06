@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 🔥 Gradient animation */
+/* 🔥 Smooth gradient animation */
 @keyframes gradientShift {
   0% {
     background-position: 0% 50%;
@@ -13,4 +13,13 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+/* 👑 Custom Utilities (optional if you want to add more coolness later) */
+.shadow-purple-glow {
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.6); /* tailwind purple-500 glow */
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
