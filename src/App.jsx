@@ -7,6 +7,22 @@ function App() {
       <p className="text-xl text-gray-300 mb-8">Aspiring AI Engineer | Passionate about ML, Neural Networks & Innovation 🤖</p>
       
       <section className="w-full max-w-3xl bg-gray-800 rounded-2xl p-6 shadow-lg mt-6">
+      <section className="w-full max-w-4xl bg-gray-800 rounded-2xl p-6 shadow-lg mt-6">
+  <h2 className="text-3xl font-semibold text-white mb-6">🧠 Featured Projects</h2>
+  
+  <div className="grid gap-6 md:grid-cols-2">
+    {/* Project Card Placeholder */}
+    <div className="bg-gray-700 rounded-xl p-4">
+      <h3 className="text-xl font-bold text-purple-300">Coming Soon: AI Chatbot</h3>
+      <p className="text-gray-300 mt-2">An interactive AI assistant built using OpenAI's GPT API.</p>
+    </div>
+
+    <div className="bg-gray-700 rounded-xl p-4">
+      <h3 className="text-xl font-bold text-purple-300">Coming Soon: Image Classifier</h3>
+      <p className="text-gray-300 mt-2">A computer vision model trained on image datasets using TensorFlow.</p>
+    </div>
+  </div>
+</section>
         <h2 className="text-2xl font-semibold text-white mb-4">🧠 Projects Coming Soon...</h2>
         <p className="text-gray-400">Stay tuned — exciting AI projects are on the way!</p>
       </section>
