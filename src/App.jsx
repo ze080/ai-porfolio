@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope, FaMoon, FaSun } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import profileImg from '/profile.jpg';
-import { toggleTheme, getInitialTheme } from './theme';
+import { toggleTheme, getInitialTheme } from './theme.js';
 import './App.css';
 
 function App() {
