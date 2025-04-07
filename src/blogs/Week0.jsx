@@ -1,46 +1,57 @@
+import React from 'react';
 import BlogLayout from '../components/BlogLayout';
 
 const Week0 = () => {
   return (
-    <div className="max-w-3xl mx-auto py-12 px-4 text-white">
-      <h1 className="text-4xl font-bold text-purple-400 mb-6">🚀 Week 0: The Beginning of a World-Class AI Journey</h1>
+    <BlogLayout title="🚀 Week 0: The Beginning of a World-Class AI Journey" date="April 6, 2025">
+      <div className="space-y-6 text-gray-200">
 
-      <p className="mb-6">Hey there, world! 👋</p>
+        <p>Hey there, world! 👋</p>
 
-      <p className="mb-6">
-        Welcome to the first official blog on my brand-new portfolio site. I’m Zayed Binjad — an aspiring AI Engineer with a mission to go from zero to world-class, one week at a time. 🧠⚡
-      </p>
+        <p>
+          Welcome to the **first official blog** on my brand-new portfolio site. I’m <span className="text-purple-400 font-semibold">Zayed Binjad</span> — an aspiring AI Engineer with a mission to go from zero to world-class, one week at a time. 🧠⚡
+        </p>
 
-      <p className="mb-6">
-        This week was all about setting the foundation, and what better way to start than by building my own digital home — this portfolio! It was a journey of late nights, troubleshooting, learning, and a bit of Googling 😅. From deploying it on Vercel, connecting custom domains like .dev, .com, and .in, to styling it all with React and Tailwind CSS — every line of code taught me something new.
-      </p>
+        <div className="bg-gray-800 border border-purple-500 rounded-xl p-4 shadow-lg">
+          <p className="font-semibold text-purple-300">This week’s highlight:</p>
+          <p>✅ Built and deployed my portfolio using React + Tailwind CSS</p>
+          <p>✅ Connected my custom domains (.dev, .com, .in)</p>
+          <p>✅ Set up blogs and a learning timeline</p>
+          <p>✅ All without a course — just docs, Google, and curiosity</p>
+        </div>
 
-      <p className="mb-6">I didn’t do this with a course. No tutorial series. Just me, the docs, some AI assistance, and raw curiosity.</p>
+        <h2 className="text-2xl text-purple-300 font-bold mt-8">🧠 What’s Next: Week 1 Learning Plan</h2>
+        <p>Here’s what I’ll be learning this week. Feel free to join in!</p>
 
-      <h2 className="text-2xl font-bold text-purple-300 mt-8 mb-4">🧠 What’s Next: Week 1 Learning Plan</h2>
-      <ul className="list-disc ml-6 mb-6 text-gray-300">
-        <li>Master Python (variables, loops, functions, OOP)</li>
-        <li>Learn NumPy, Pandas, Matplotlib basics</li>
-        <li>Linear Algebra (vectors, dot product, matrix operations)</li>
-        <li>Calculus (derivatives, gradients)</li>
-        <li>Probability & Statistics (mean, std dev, distributions)</li>
-        <li>Build Python Projects: calculator, matrix ops, CSV analyzer</li>
-      </ul>
+        <ul className="list-disc list-inside pl-2 space-y-1">
+          <li>📘 Master Python (variables, loops, functions, OOP)</li>
+          <li>📊 Learn NumPy, Pandas, Matplotlib basics</li>
+          <li>📐 Linear Algebra (vectors, dot product, matrix operations)</li>
+          <li>🔢 Calculus (derivatives, gradients)</li>
+          <li>🎲 Probability & Statistics (mean, std dev, distributions)</li>
+          <li>🛠️ Build Python Projects: calculator, matrix ops, CSV analyzer</li>
+        </ul>
 
-      <p className="mb-6 text-purple-300 italic">📚 It’s going to be a packed week, but I’m excited — this is the ground zero of something big.</p>
+        <div className="bg-purple-950/30 border-l-4 border-purple-500 p-4 rounded-lg text-sm italic text-purple-200">
+          “It’s going to be a packed week, but I’m excited — this is the ground zero of something big.”
+        </div>
 
-      <h2 className="text-2xl font-bold text-purple-300 mt-8 mb-4">🔥 Why I’m Doing This</h2>
-      <p className="mb-6">
-        AI isn’t just the future — it’s the now. And I’m here to not just learn it, but master it. I’ll be documenting everything I do — honestly, openly, and consistently — so if you’ve ever wanted to learn AI, this might be your sign to start.
-      </p>
+        <h2 className="text-2xl text-purple-300 font-bold mt-8">🔥 Why I’m Doing This</h2>
+        <p>
+          AI isn’t just the future — it’s the <span className="font-bold text-white">now</span>. And I’m not here to just learn it — I’m here to master it.
+        </p>
+        <p>
+          I’ll be documenting everything: honestly, openly, and consistently. If you’ve ever wanted to learn AI — this might be your sign to start.
+        </p>
 
-      <h2 className="text-2xl font-bold text-purple-300 mt-8 mb-4">🗓️ See You Next Sunday @ 9 PM!</h2>
-      <p className="mb-6">
-        I'll be posting a new blog every Sunday at 9 PM, sharing my progress, challenges, learnings, and projects. If you want to learn with me, or just stay inspired — I’d love to have you on this journey.
-      </p>
+        <div className="bg-gray-900 border border-purple-600 rounded-xl p-4 mt-8 text-center">
+          <p className="text-purple-300 font-semibold text-lg">🗓️ See You Next Sunday @ 9 PM!</p>
+          <p>I’ll be posting a new blog every Sunday night with my progress, challenges, and learnings. Hope to see you on the journey!</p>
+        </div>
 
-      <p className="text-purple-400 font-semibold">Until then,<br />Stay curious, stay consistent.<br />— Zayed 💜</p>
-    </div>
+        <p className="text-right mt-10 italic text-purple-400">— Zayed 💜</p>
+      </div>
+    </BlogLayout>
   );
 };
 
