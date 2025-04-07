@@ -63,7 +63,8 @@ function App() {
   <div className="space-y-4">
     <div className="bg-gray-700 rounded-xl p-4 shadow-md hover:shadow-purple-400/30 transition">
       <h3 className="text-xl font-bold text-purple-300">Coming Soon: My AI Journey</h3>
-      <p className="text-gray-300 mt-2">Sharing thoughts, tutorials, and insights about Machine Learning and AI development.</p>
+      <p className="text-gray-300 mt-2">Sharing thoughts, tutorials, and insights about Machine Learning and AI development. <br /> Every Sunday
+         9 P.M.</p>
     </div>
   </div>
 </section>
@@ -72,15 +73,20 @@ function App() {
 <section className="w-full max-w-4xl bg-gray-800 rounded-2xl p-6 shadow-lg mt-10">
   <h2 className="text-3xl font-semibold text-white mb-6">📆 Learning Timeline</h2>
   <ul className="space-y-4 border-l-2 border-purple-500 pl-4">
-    <li className="relative">
-      <span className="absolute left-[-12px] top-1 w-4 h-4 bg-purple-500 rounded-full"></span>
-      <h4 className="text-lg font-semibold text-purple-300">April 2025</h4>
-      <p className="text-gray-300 text-sm">Started building my AI portfolio and exploring neural networks.</p>
-    </li>
-    {/* Add more timeline events later */}
-  </ul>
+  <li className="relative group transition-transform hover:scale-[1.01] hover:shadow-lg hover:bg-gray-700 p-4 rounded-md">
+    <span className="absolute left-[-12px] top-4 w-4 h-4 bg-purple-500 rounded-full border-2 border-white group-hover:scale-110 transition-transform"></span>
+    <h4 className="text-lg font-semibold text-purple-300">April 2025</h4>
+    <p className="text-gray-300 text-sm mt-1">Started building my AI portfolio and exploring Python and Maths.</p>
+  </li>
+  <li className="relative group p-4 mt-6 bg-purple-900/30 border border-purple-600 rounded-xl text-purple-200 italic">
+  🚀 More coming soon... Stay tuned!
+</li>
+</ul>
 </section>
 
+<a href="/checklist" className="mt-10 text-purple-300 underline hover:text-purple-100 transition">
+  View AI Engineer Checklist
+</a>
 
       {/* 🔗 Social Icons */}
       <div className="flex gap-6 mt-10 text-3xl">
