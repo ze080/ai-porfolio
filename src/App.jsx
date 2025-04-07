@@ -1,27 +1,27 @@
 import { useEffect } from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope, FaMoon, FaSun } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+// import { toggleTheme, getInitialTheme } from "./theme.js";
 import profileImg from '/profile.jpg';
-import { toggleTheme, getInitialTheme } from './theme.js';
 import './App.css';
 
 function App() {
   // 🌓 Run on load to set theme
-  useEffect(() => {
-    getInitialTheme();
-  }, []);
+  //useEffect(() => {
+  //  getInitialTheme();
+  //}, [])
 
   return (
     <div className="min-h-screen h-full bg-gradient-to-br from-gray-900 via-purple-900 to-black bg-[length:200%_200%] animate-[gradientShift_10s_ease_infinite] text-white flex flex-col items-center justify-center px-4 py-10">
       
       {/* 🌗 Theme Toggle Button */}
-      <button
+      {/* <button
         onClick={toggleTheme}
         className="fixed top-4 right-4 z-50 p-2 rounded-full bg-gray-800 text-yellow-300 dark:bg-white dark:text-gray-800 shadow-md hover:scale-110 transition-transform duration-300"
       >
         <FaMoon className="dark:hidden" />
         <FaSun className="hidden dark:inline" />
-      </button>
+      </button> */}
 
       {/* 👤 Profile Section */}
       <motion.section
