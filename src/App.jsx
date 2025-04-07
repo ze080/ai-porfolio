@@ -57,6 +57,30 @@ function App() {
           </div>
         </div>
       </section>
+      {/* 📝 Blog Section */}
+<section className="w-full max-w-4xl bg-gray-800 rounded-2xl p-6 shadow-lg mt-10">
+  <h2 className="text-3xl font-semibold text-white mb-6">📝 Blog</h2>
+  <div className="space-y-4">
+    <div className="bg-gray-700 rounded-xl p-4 shadow-md hover:shadow-purple-400/30 transition">
+      <h3 className="text-xl font-bold text-purple-300">Coming Soon: My AI Journey</h3>
+      <p className="text-gray-300 mt-2">Sharing thoughts, tutorials, and insights about Machine Learning and AI development.</p>
+    </div>
+  </div>
+</section>
+
+{/* 🕒 Learning Timeline Section */}
+<section className="w-full max-w-4xl bg-gray-800 rounded-2xl p-6 shadow-lg mt-10">
+  <h2 className="text-3xl font-semibold text-white mb-6">📆 Learning Timeline</h2>
+  <ul className="space-y-4 border-l-2 border-purple-500 pl-4">
+    <li className="relative">
+      <span className="absolute left-[-12px] top-1 w-4 h-4 bg-purple-500 rounded-full"></span>
+      <h4 className="text-lg font-semibold text-purple-300">April 2025</h4>
+      <p className="text-gray-300 text-sm">Started building my AI portfolio and exploring neural networks.</p>
+    </li>
+    {/* Add more timeline events later */}
+  </ul>
+</section>
+
 
       {/* 🔗 Social Icons */}
       <div className="flex gap-6 mt-10 text-3xl">
