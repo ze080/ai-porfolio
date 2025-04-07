@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import blogs from '../blogs';
+import blogs from '../blogs/blog';
 
 const BlogPage = () => {
   const [selectedBlog, setSelectedBlog] = useState(null);
 
   const handleSelect = (blog) => {
     setSelectedBlog(blog);
-    window.scrollTo(0, 0); // scroll to top on open
+    window.scrollTo(0, 0); // scroll to top when a blog is opened
   };
 
   if (selectedBlog) {
