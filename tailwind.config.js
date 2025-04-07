@@ -1,14 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class', // This is key for toggling themes
   theme: {
     extend: {
       animation: {
-        gradientShift: 'gradientShift 10s ease infinite',
+        gradientShift: "gradientShift 10s ease infinite",
       },
       keyframes: {
         gradientShift: {

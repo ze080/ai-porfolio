@@ -1,25 +1,31 @@
-export function setInitialTheme() {
-  const isDark = localStorage.getItem('theme') === 'dark' ||
-    (!('theme' in localStorage) &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches);
+export function toggleTheme() {
+  const html = document.documentElement; // this targets <html>
+  const currentTheme = localStorage.getItem("theme");
 
-  if (isDark) {
-    document.documentElement.classList.add('dark');
-    localStorage.setItem('theme', 'dark');
+  if (currentTheme === "dark") {
+    html.classList.remove("dark");
+    localStorage.setItem("theme", "light");
   } else {
-    document.documentElement.classList.remove('dark');
-    localStorage.setItem('theme', 'light');
+    html.classList.add("dark");
+    localStorage.setItem("theme", "dark");
   }
 }
 
-export function toggleTheme() {
-  const root = document.documentElement;
-  const isDark = root.classList.contains('dark');
-  if (isDark) {
-    root.classList.remove('dark');
-    localStorage.setItem('theme', 'light');
+export function getInitialTheme() {
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme === "dark") {
+    document.documentElement.classList.add("dark");
+  } else if (savedTheme === "light") {
+    document.documentElement.classList.remove("dark");
   } else {
-    root.classList.add('dark');
-    localStorage.setItem('theme', 'dark');
+    // Default to system preference if nothing is stored
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (prefersDark) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      localStorage.setItem("theme", "light");
+    }
   }
 }

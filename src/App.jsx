@@ -1,20 +1,28 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { useEffect } from 'react';
+import { FaGithub, FaLinkedin, FaEnvelope, FaMoon, FaSun } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import profileImg from '/profile.jpg';
-import { toggleTheme } from './theme';
-import { FaMoon, FaSun } from 'react-icons/fa';
+import { toggleTheme, getInitialTheme } from './theme';
 import './App.css';
 
 function App() {
+  // 🌓 Run on load to set theme
+  useEffect(() => {
+    getInitialTheme();
+  }, []);
+
   return (
     <div className="min-h-screen h-full bg-gradient-to-br from-gray-900 via-purple-900 to-black bg-[length:200%_200%] animate-[gradientShift_10s_ease_infinite] text-white flex flex-col items-center justify-center px-4 py-10">
+      
+      {/* 🌗 Theme Toggle Button */}
       <button
-  onClick={toggleTheme}
-  className="fixed top-4 right-4 z-50 p-2 rounded-full bg-gray-800 text-yellow-300 dark:bg-white dark:text-gray-800 shadow-md hover:scale-110 transition-transform duration-300"
->
-  <FaMoon className="dark:hidden" />
-  <FaSun className="hidden dark:inline" />
-</button>
+        onClick={toggleTheme}
+        className="fixed top-4 right-4 z-50 p-2 rounded-full bg-gray-800 text-yellow-300 dark:bg-white dark:text-gray-800 shadow-md hover:scale-110 transition-transform duration-300"
+      >
+        <FaMoon className="dark:hidden" />
+        <FaSun className="hidden dark:inline" />
+      </button>
+
       {/* 👤 Profile Section */}
       <motion.section
         initial={{ opacity: 0, y: -30 }}
@@ -23,11 +31,11 @@ function App() {
         className="flex flex-col items-center text-center mb-12"
       >
         <img
-  src="/profile.jpg"
-  alt="Zayed Binjad"
-  onError={(e) => (e.target.style.display = 'none')}
-  className="w-40 h-40 rounded-full border-4 border-purple-500 shadow-xl mb-4 object-cover ring-glow"
-/>
+          src={profileImg}
+          alt="Zayed Binjad"
+          onError={(e) => (e.target.style.display = 'none')}
+          className="w-40 h-40 rounded-full border-4 border-purple-500 shadow-xl mb-4 object-cover ring-glow"
+        />
 
         <h1 className="text-5xl font-bold text-purple-400">Zayed Binjad</h1>
         <p className="text-xl text-gray-300 mt-2">
@@ -38,15 +46,11 @@ function App() {
       {/* 🧠 Projects Section */}
       <section className="w-full max-w-4xl bg-gray-800 rounded-2xl p-6 shadow-lg mt-6">
         <h2 className="text-3xl font-semibold text-white mb-6">🧠 Featured Projects</h2>
-        
         <div className="grid gap-6 md:grid-cols-2">
-          {/* Project 1 */}
           <div className="bg-gray-700 rounded-xl p-4 shadow-xl hover:shadow-purple-500/30 transition duration-300">
             <h3 className="text-xl font-bold text-purple-300">Coming Soon: AI Chatbot</h3>
             <p className="text-gray-300 mt-2">An interactive AI assistant built using OpenAI's GPT API.</p>
           </div>
-
-          {/* Project 2 */}
           <div className="bg-gray-700 rounded-xl p-4 shadow-xl hover:shadow-purple-500/30 transition duration-300">
             <h3 className="text-xl font-bold text-purple-300">Coming Soon: Image Classifier</h3>
             <p className="text-gray-300 mt-2">A computer vision model trained on image datasets using TensorFlow.</p>
