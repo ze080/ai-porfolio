@@ -60,11 +60,11 @@ function PortfolioHome() {
 
       {/* 📝 Blog Section - Updated for Router */}
       <section className="w-full max-w-4xl bg-gray-800 rounded-2xl p-6 shadow-lg mt-10">
-  <h2 className="text-3xl font-semibold text-white mb-6">📝 Blog</h2>
+  <h2 className="text-3xl font-semibold text-white mb-6">📝 Latest Blog</h2>
   <div className="space-y-4">
     <Link to="/blog">
       <div className="bg-gray-700 rounded-xl p-4 shadow-md hover:shadow-purple-400/30 transition hover:scale-105">
-        <h3 className="text-xl font-bold text-purple-300">Week 0: The Beginning of a World-Class AI Journey</h3>
+        <h3 className="text-xl font-bold text-purple-300">🧠 Week 1: Foundations of AI - Python, Math & Mindset</h3>
         <p className="text-gray-300 mt-2">Join me as I build my AI future from scratch. Weekly blogs every Sunday 9 PM!</p>
       </div>
     </Link>
