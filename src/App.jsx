@@ -1,9 +1,11 @@
 import { Routes, Route, Link } from 'react-router-dom';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import BlogPost from './pages/Blog';
+import BlogPage from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import Checklist from './pages/Checklist';
 import profileImg from '/profile.jpg';
+import Week1 from './blogs/Week1';
 import './App.css';
 
 function App() {
@@ -11,7 +13,8 @@ function App() {
    
       <Routes>
         <Route path="/" element={<PortfolioHome />} />
-        <Route path="/blog" element={<BlogPost />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/checklist" element={<Checklist />} />
       </Routes>
     

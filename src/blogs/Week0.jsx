@@ -1,10 +1,15 @@
 import React from 'react';
 import BlogLayout from '../components/BlogLayout';
+import blogPosts from '../data/blogPosts';
 
 const Week0 = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a]">
-      <BlogLayout title="🚀 Week 0: The Beginning of a World-Class AI Journey" date="April 6, 2025">
+      <BlogLayout 
+        title="🚀 Week 0: The Beginning of a World-Class AI Journey" 
+        posts={blogPosts}
+        currentSlug="week0"
+      >
         <div className="space-y-6 text-gray-200">
 
           <p>Hey there, world! 👋</p>
