@@ -7,11 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate:og": "node generate-og-images.js"
   },
   "dependencies": {
     "framer-motion": "^12.6.3",
     "lucide-react": "^0.487.0",
+    "puppeteer": "^24.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.5",
