@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import blogPosts from '../data/blogPosts';
 import Week0 from '../blogs/Week0';
 import Week1 from '../blogs/Week1';
-
 const blogComponents = {
   'week0': Week0,
   'week1': Week1

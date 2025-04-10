@@ -14,6 +14,7 @@ const blogs = [
     date: 'April 13, 2025',
     Component: Week1,
   },
+
   // Add more blogs here later...
 ];
 

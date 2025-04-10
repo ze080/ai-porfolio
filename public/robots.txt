@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /src/
+Disallow: /BlogPost.test.jsx
+
+Sitemap: https://zayedbinjad.dev/sitemap.xml
