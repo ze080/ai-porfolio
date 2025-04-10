@@ -5,8 +5,10 @@ import BlogPage from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Checklist from './pages/Checklist';
 import profileImg from '/profile.jpg';
+import { Analytics } from "@vercel/analytics/react"
 import Week1 from './blogs/Week1';
 import './App.css';
+
 
 function App() {
   return (
@@ -20,7 +22,7 @@ function App() {
     
   );
 }
-
+<Analytics />
 // Your existing home page as a separate component
 function PortfolioHome() {
   return (
@@ -124,6 +126,7 @@ function PortfolioHome() {
         © {new Date().getFullYear()} Zayed Binjad. All rights reserved.
       </footer>
     </div>
+    
   );
 }
 
