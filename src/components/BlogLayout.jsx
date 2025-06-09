@@ -38,7 +38,7 @@ const BlogLayout = ({ title, children, posts = [], currentSlug = '' }) => {
     <>
       <Helmet>
         <title>{title} | Zayed's AI Journey</title>
-        <meta name="description" content={`${title} - Weekly AI learning updates`} />
+        <meta name="description" content={`${title} - Monthly AI learning updates`} />
       </Helmet>
 
       <div className="max-w-3xl mx-auto px-4 py-12 text-white">

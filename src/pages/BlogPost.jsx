@@ -1,13 +1,15 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import blogPosts from '../data/blogPosts';
-import Week0 from '../blogs/Week0';
-import Week1 from '../blogs/Week1';
+import Month0 from '../blogs/Month0';
+import Month1 from '../blogs/Month1';
+import Month2 from '../blogs/Month2';
 import SEO from '../components/SEO';
 
 const blogComponents = {
-  'week0': Week0,
-  'week1': Week1,
+  'month0': Month0,
+  'month1': Month1,
+  'month2': Month2,
 };
 
 const BlogPost = () => {
