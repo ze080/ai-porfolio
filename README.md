@@ -1,12 +1,51 @@
-# React + Vite
+# React Blog Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a personal blog portfolio built with React and Vite. It features blog posts organized by months, dynamic routing, and SEO optimization.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- Vite
+- React Router
+- Tailwind CSS
+- React Helmet Async (for SEO)
+- Framer Motion (for animations)
+- Lucide React and React Icons (for icons)
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `src/pages/` - Contains page components including the main blog listing and individual blog post pages.
+- `src/blogs/` - Contains blog post content components organized by month.
+- `src/components/` - Reusable UI components such as BlogLayout and SEO.
+- `src/data/blogPosts.js` - Metadata for blog posts including titles, descriptions, and slugs.
+- `src/assets/` - Static assets like images and icons.
+
+## Getting Started
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+3. Open your browser and navigate to `http://localhost:3000` (or the port Vite specifies).
+
+## Adding Blog Posts
+
+- Add blog post metadata in `src/data/blogPosts.js`.
+- Create corresponding blog content components in `src/blogs/` following the existing month-based naming convention (e.g., `MonthX.jsx`).
+- Update routing or blog listing pages if necessary.
+
+## Testing
+
+Currently, there are no automated tests included. Manual testing is recommended by navigating through the blog pages and verifying content rendering.
+
+## License
+
+This project is open source and available under the MIT License.
