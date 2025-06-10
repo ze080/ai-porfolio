@@ -54,12 +54,12 @@ function PortfolioHome() {
         <h2 className="text-3xl font-semibold text-white mb-6">🧠 Featured Projects</h2>
         <div className="grid gap-6 md:grid-cols-2">
           <div className="bg-gray-700 rounded-xl p-4 shadow-xl hover:shadow-purple-500/30 transition duration-300">
-            <h3 className="text-xl font-bold text-purple-300">Coming Soon: AI Chatbot</h3>
+            <h3 className="text-xl font-bold text-purple-300">July 1, 2025:  AI Chatbot</h3>
             <p className="text-gray-300 mt-2">An interactive AI assistant built using OpenAI's GPT API.</p>
           </div>
           <div className="bg-gray-700 rounded-xl p-4 shadow-xl hover:shadow-purple-500/30 transition duration-300">
-            <h3 className="text-xl font-bold text-purple-300">Coming Soon: Image Classifier</h3>
-            <p className="text-gray-300 mt-2">A computer vision model trained on image datasets using TensorFlow.</p>
+            <h3 className="text-xl font-bold text-purple-300">September 15, 2025:  Autonomous AI magazine</h3>
+            <p className="text-gray-300 mt-2">A digital magazine for AI enthusiasts.</p>
           </div>
         </div>
       </section>
@@ -70,7 +70,7 @@ function PortfolioHome() {
   <div className="space-y-4">
     <Link to="/blog">
       <div className="bg-gray-700 rounded-xl p-4 shadow-md hover:shadow-purple-400/30 transition hover:scale-105">
-        <h3 className="text-xl font-bold text-purple-300">🧠 Month 1: Foundations of AI - Python, Math & Mindset</h3>
+        <h3 className="text-xl font-bold text-purple-300">🧠 Month 2: Advanced AI Concepts and Projects</h3>
         <p className="text-gray-300 mt-2">Join me as I build my AI future from scratch. Weekly blogs every Sunday 9 PM!</p>
       </div>
     </Link>
@@ -85,6 +85,11 @@ function PortfolioHome() {
             <span className="absolute left-[-12px] top-4 w-4 h-4 bg-purple-500 rounded-full border-2 border-white group-hover:scale-110 transition-transform"></span>
             <h4 className="text-lg font-semibold text-purple-300">April 2025</h4>
             <p className="text-gray-300 text-sm mt-1">Started building my AI portfolio and exploring Python and Maths.</p>
+          </li>
+           <li className="relative group transition-transform hover:scale-[1.01] hover:shadow-lg hover:bg-gray-700 p-4 rounded-md">
+            <span className="absolute left-[-12px] top-4 w-4 h-4 bg-purple-500 rounded-full border-2 border-white group-hover:scale-110 transition-transform"></span>
+            <h4 className="text-lg font-semibold text-purple-300">May 2025</h4>
+            <p className="text-gray-300 text-sm mt-1">Started working with data structures and basic algorithms</p>
           </li>
           <li className="relative group p-4 mt-6 bg-purple-900/30 border border-purple-600 rounded-xl text-purple-200 italic">
             🚀 More coming soon... Stay tuned!
@@ -115,7 +120,7 @@ function PortfolioHome() {
           <FaLinkedin />
         </a>
         <a
-          href="mailto:zayedbinjad@gmail.com"
+          href="mailto:work@zayedbinjad.com"
           className="text-gray-300 hover:text-pink-400 hover:scale-125 transition-transform duration-300 ease-in-out"
         >
           <FaEnvelope />

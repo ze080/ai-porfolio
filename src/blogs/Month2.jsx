@@ -20,7 +20,8 @@ const Month2 = () => {
           currentSlug="month2"
         >
           <div className="space-y-6 text-gray-200">
-            <p>Coming soon! Stay tuned for updates on advanced AI topics and projects.</p>
+            <p>🚧 Really busy to work on website right now, but great updates coming on 20th June </p>
+            {/* <p>Coming soon! Stay tuned for updates on advanced AI topics and projects.</p> */}
             {/* Your blog content here */}
           </div>
         </BlogLayout>
