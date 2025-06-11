@@ -19,6 +19,9 @@ This project is a personal blog portfolio built with React and Vite. It features
 - `src/components/` - Reusable UI components such as BlogLayout and SEO.
 - `src/data/blogPosts.js` - Metadata for blog posts including titles, descriptions, and slugs.
 - `src/assets/` - Static assets like images and icons.
+  *Note*
+  The sturcture is going to get changed time to time, depends on how creative i feel and what i will add to my Portolio. It's a journey not a destination.
+  To see changes in short see the Updates section below. ;)
 
 ## Getting Started
 
@@ -49,3 +52,12 @@ Currently, there are no automated tests included. Manual testing is recommended 
 ## License
 
 This project is open source and available under the MIT License.
+
+## Updates 
+
+On June 11 9:57 am
+ - In Today's update i changed .jsx files to .tsx and added some folders and files.
+ - All major and minor changes were to add ChatBot project, it is working good but not like what i expected. Hope to work on it in coming weeks and launch it on July 1.
+ - Also major update is going to come on June 20 for frontend.
+ - Will add updates like this from now on cause I feel like now i am doing something better.
+ - Bye...... See you again!!! 
