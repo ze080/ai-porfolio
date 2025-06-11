@@ -102,7 +102,7 @@ const BlogLayout = ({ title, children, posts = [], currentSlug = '' }) => {
     </div>
   </motion.button>
 
-  <ReactTooltip id="copy-tooltip" place="top" effect="solid" />
+  <ReactTooltip id="copy-tooltip" place="top" />
 </div>
 
         {/* Post Navigation - Force Next button to appear right-aligned */}

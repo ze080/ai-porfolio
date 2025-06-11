@@ -1,31 +1,40 @@
+import React, { SyntheticEvent } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import BlogPage from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Checklist from './pages/Checklist';
-import profileImg from '/profile.jpg';
-import { Analytics } from "@vercel/analytics/react"
+import profileImg from './assets/profile.jpg';
+import { Analytics } from "@vercel/analytics/react";
 import Month1 from './blogs/Month1';
 import Month2 from './blogs/Month2';
+// import ChatBot from '@/components/ChatBot'; 
 import './App.css';
-
 
 function App() {
   return (
-   
+    <>
       <Routes>
         <Route path="/" element={<PortfolioHome />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/checklist" element={<Checklist />} />
+        {/* <Route path="/chat" element={<ChatBot />} /> */}
       </Routes>
-    
+      <Analytics />
+    </>
   );
 }
-<Analytics />
+
 // Your existing home page as a separate component
 function PortfolioHome() {
+  // Add type for event handler
+  const handleImageError = (e: SyntheticEvent<HTMLImageElement, Event>) => {
+    const target = e.target as HTMLImageElement;
+    target.style.display = 'none';
+  };
+
   return (
     <div className="min-h-screen h-full bg-gradient-to-br from-gray-900 via-purple-900 to-black bg-[length:200%_200%] animate-[gradientShift_10s_ease_infinite] text-white flex flex-col items-center justify-center px-4 py-10">
       
@@ -39,7 +48,7 @@ function PortfolioHome() {
         <img
           src={profileImg}
           alt="Zayed Binjad"
-          onError={(e) => (e.target.style.display = 'none')}
+          onError={handleImageError}
           className="w-40 h-40 rounded-full border-4 border-purple-500 shadow-xl mb-4 object-cover ring-glow"
         />
 
@@ -53,10 +62,12 @@ function PortfolioHome() {
       <section className="w-full max-w-4xl bg-gray-800 rounded-2xl p-6 shadow-lg mt-6">
         <h2 className="text-3xl font-semibold text-white mb-6">🧠 Featured Projects</h2>
         <div className="grid gap-6 md:grid-cols-2">
-          <div className="bg-gray-700 rounded-xl p-4 shadow-xl hover:shadow-purple-500/30 transition duration-300">
-            <h3 className="text-xl font-bold text-purple-300">July 1, 2025:  AI Chatbot</h3>
-            <p className="text-gray-300 mt-2">An interactive AI assistant built using OpenAI's GPT API.</p>
-          </div>
+          <Link to="/chat" className="block hover:scale-105 transition-transform duration-300">
+  <div className="bg-gray-700 rounded-xl p-4 shadow-xl hover:shadow-purple-500/30">
+    <h3 className="text-xl font-bold text-purple-300">July 1, 2025: AI Chatbot</h3>
+    <p className="text-gray-300 mt-2">An interactive AI assistant built using OpenAI's GPT API.</p>
+  </div>
+</Link>
           <div className="bg-gray-700 rounded-xl p-4 shadow-xl hover:shadow-purple-500/30 transition duration-300">
             <h3 className="text-xl font-bold text-purple-300">September 15, 2025:  Autonomous AI magazine</h3>
             <p className="text-gray-300 mt-2">A digital magazine for AI enthusiasts.</p>
@@ -66,16 +77,16 @@ function PortfolioHome() {
 
       {/* 📝 Blog Section - Updated for Router */}
       <section className="w-full max-w-4xl bg-gray-800 rounded-2xl p-6 shadow-lg mt-10">
-  <h2 className="text-3xl font-semibold text-white mb-6">📝 Latest Blog</h2>
-  <div className="space-y-4">
-    <Link to="/blog">
-      <div className="bg-gray-700 rounded-xl p-4 shadow-md hover:shadow-purple-400/30 transition hover:scale-105">
-        <h3 className="text-xl font-bold text-purple-300">🧠 Month 2: Advanced AI Concepts and Projects</h3>
-        <p className="text-gray-300 mt-2">Join me as I build my AI future from scratch. Weekly blogs every Sunday 9 PM!</p>
-      </div>
-    </Link>
-  </div>
-</section>
+        <h2 className="text-3xl font-semibold text-white mb-6">📝 Latest Blog</h2>
+        <div className="space-y-4">
+          <Link to="/blog">
+            <div className="bg-gray-700 rounded-xl p-4 shadow-md hover:shadow-purple-400/30 transition hover:scale-105">
+              <h3 className="text-xl font-bold text-purple-300">🧠 Month 2: Advanced AI Concepts and Projects</h3>
+              <p className="text-gray-300 mt-2">Join me as I build my AI future from scratch. Weekly blogs every Sunday 9 PM!</p>
+            </div>
+          </Link>
+        </div>
+      </section>
 
       {/* 🕒 Learning Timeline Section */}
       <section className="w-full max-w-4xl bg-gray-800 rounded-2xl p-6 shadow-lg mt-10">
@@ -86,12 +97,12 @@ function PortfolioHome() {
             <h4 className="text-lg font-semibold text-purple-300">April 2025</h4>
             <p className="text-gray-300 text-sm mt-1">Started building my AI portfolio and exploring Python and Maths.</p>
           </li>
-           <li className="relative group transition-transform hover:scale-[1.01] hover:shadow-lg hover:bg-gray-700 p-4 rounded-md">
+          <li className="relative group transition-transform hover:scale-[1.01] hover:shadow-lg hover:bg-gray-700 p-4 rounded-md">
             <span className="absolute left-[-12px] top-4 w-4 h-4 bg-purple-500 rounded-full border-2 border-white group-hover:scale-110 transition-transform"></span>
             <h4 className="text-lg font-semibold text-purple-300">May 2025</h4>
             <p className="text-gray-300 text-sm mt-1">Started working with data structures and basic algorithms</p>
           </li>
-          <li className="relative group p-4 mt-6 bg-purple-900/30 border border-purple-600 rounded-xl text-purple-200 italic">
+          <li className="relative group p-4 mt-6 bg-purple-900/30 border border-purple-600 rounded-xl text-purple-400  italic text-purple-400">
             🚀 More coming soon... Stay tuned!
           </li>
         </ul>
@@ -132,7 +143,6 @@ function PortfolioHome() {
         © {new Date().getFullYear()} Zayed Binjad. All rights reserved.
       </footer>
     </div>
-    
   );
 }
 

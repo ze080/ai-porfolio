@@ -3,7 +3,7 @@ import BlogLayout from '../components/BlogLayout';
 import blogPosts from '../data/blogPosts';
 import SEO from '../components/SEO';
 
-const Month1 = () => {
+const Month1: React.FC = () => {
   return (
     <>
       <SEO

@@ -1,4 +1,4 @@
-import Month0 from './Month0.jsx';
+import Month0 from './Month0.js';
 import Month1 from './Month1.jsx';
 import Month2 from './Month2.jsx';
 
