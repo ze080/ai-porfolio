@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
-type Theme = 'default' | 'batman' | 'console' | 'matrix';
+type Theme = 'default' | 'batman' | 'console' | 'matrix' | 'cyberpunk';
 
 interface ThemeContextType {
   theme: Theme;

@@ -1,19 +1,22 @@
 import { motion } from 'framer-motion';
 import { ArrowDown, Sparkles } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
+import ThemeSelector from './ThemeSelector';
 
 const gradientMap = {
   default: 'from-purple-600 via-pink-600 to-blue-600',
   batman: 'from-gray-900 via-yellow-500 to-black',
   console: 'from-green-500 via-black to-green-900',
-  matrix: 'from-black via-green-600 to-black'
+  matrix: 'from-black via-green-600 to-black',
+  cyberpunk: 'from-pink-500 via-blue-500 to-purple-600'
 };
 
 const textGradientMap = {
   default: 'from-white to-white/70',
   batman: 'from-yellow-400 to-yellow-600',
   console: 'from-green-400 to-green-600',
-  matrix: 'from-green-400 to-green-600'
+  matrix: 'from-green-400 to-green-600',
+  cyberpunk: 'from-cyan-400 to-yellow-300'
 };
 
 export default function Hero() {
@@ -21,6 +24,7 @@ export default function Hero() {
 
   return (
     <section className="relative h-screen overflow-hidden">
+      <ThemeSelector />
       {/* Animated gradient background */}
       <motion.div 
         initial={{ opacity: 0 }}
@@ -43,7 +47,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-6xl md:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/70"
+            className={`text-6xl md:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r ${textGradientMap[theme]}`}
           >
             Digital Alchemist
           </motion.h1>
@@ -83,6 +87,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-
   );
 }
